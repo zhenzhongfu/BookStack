@@ -76,7 +76,7 @@
                             </div>
                             <div class="panel-body" style="padding-left: 0px;padding-right:0px;margin-left: -8px;margin-right: -8px;">
                                 {{range $idx1,$children:=$.Cates}}
-                                    {{if and (gt $children.Cnt 0) (eq $cate.Id $children.Pid)}}
+                                    {{if and (gt $children.Cnt 0) (eq $cate.Id $children.Id)}}
                                         <div class="col-xs-12 col-sm-6 col-md-4">
                                             <div class="cate-item clearfix" data-placement="bottom" title="{{$children.Intro}}">
                                                 <div>
